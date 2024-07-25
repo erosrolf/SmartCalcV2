@@ -1,0 +1,26 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:SmartCalcApp.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="SmartCalcApp.Views.XValueInputView"
+             x:DataType="vm:XValueInputViewModel">
+    
+    <UserControl.Styles>
+        <StyleInclude Source="XValueInputStyle.axaml"/>
+    </UserControl.Styles>
+    
+    <TextBox Name="XExpressionInputTextBox"
+             VerticalAlignment="Center"
+             TextAlignment="Center"
+             Margin="6, 3, 6, 2"
+             BorderThickness="0"
+             Background="Transparent"
+             Watermark="x value"
+             Text="{Binding XExpression}"
+             TextInput="TextBox_XInputValidationRegexKeyDown"
+    >
+    </TextBox>
+
+</UserControl>

@@ -1,0 +1,51 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:SmartCalcApp.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="SmartCalcApp.Views.XGraphValueInputView"
+             x:DataType="vm:XGraphValueInputViewModel">
+    
+    
+    <Grid ColumnDefinitions="1* 3* 1* 3*">
+        
+        <TextBlock 
+            Grid.Column="0"
+            Margin="5"
+            VerticalAlignment="Center"
+            FontSize="12"
+            Text="Min x"/>
+        
+        <NumericUpDown
+            Grid.Column="1"
+            Name="XMin"
+            Margin="5"
+            VerticalAlignment="Center"
+            ShowButtonSpinner="False"
+            Minimum="-1000000"
+            Maximum="1000000"
+            FormatString="0.00"
+            CornerRadius="16"
+            Value="{Binding XMin}" />
+        
+        <TextBlock 
+            Grid.Column="2"
+            Margin="5"
+            VerticalAlignment="Center"
+            FontSize="12"
+            Text="Max x"/>
+        
+        <NumericUpDown Grid.Column="3"
+            Name="XMax"
+            Margin="5"
+            VerticalAlignment="Center"
+            ShowButtonSpinner="False"
+            Minimum="-1000000"
+            Maximum="1000000"
+            FormatString="0.00"
+            CornerRadius="16"
+            Value="{Binding XMax}" />
+        
+    </Grid>
+</UserControl>

@@ -1,0 +1,46 @@
+{
+  "OperationsText": [
+    "Brackets",
+    "Addition",
+    "Substruction",
+    "Multiplication",
+    "Division",
+    "Power",
+    "Modulus",
+    "Unary plus",
+    "Unary minus"
+  ],
+  "FunctionsText": [
+    "Cosine",
+    "Sine",
+    "Tangent",
+    "Arc cosine",
+    "Arc sine",
+    "Arc tangent",
+    "Square root",
+    "Natural logarithm",
+    "Common logarithm"
+  ],
+  "OperationsExamples": [
+    "(a+b)",
+    "a + b",
+    "a - b",
+    "a * b",
+    "a / b",
+    "a ^ b",
+    "a % b",
+    "+a",
+    "-a"
+  ],
+  "FunctionsExamples": [
+    "cos(x)",
+    "sin(x)",
+    "tan(x)",
+    "acos(x)",
+    "asin(x)",
+    "atan(x)",
+    "sqrt(x)",
+    "ln(x)",
+    "log(x)"
+  ]
+}
