@@ -14,12 +14,12 @@ public class InstructionService
             throw new Exception("App.Settings are not initialized!");
         }
 
-        if (!File.Exists(App.Settings.InstructionFilePath))
+        if (!File.Exists(App.Settings.CombinedInstructionFilePath()))
         {
             throw new Exception("File with instructions not found");
         }
 
-        var json = File.ReadAllText(App.Settings.InstructionFilePath);
+        var json = File.ReadAllText(App.Settings.CombinedInstructionFilePath());
         return JsonSerializer.Deserialize<InstructionModel>(json);
     }
 }
