@@ -4,7 +4,7 @@
 This project is an advanced calculator capable of evaluating bracketed expressions with trigonometric functions using Reverse Polish Notation (RPN). It also features a function graph plotting capability. The core calculation logic is implemented using a custom-built C++17 library, and the application is developed using the Avalonia framework. To keep track of operation history, the application stores data in an SQLite database.<br>
 
 <p align="center">
-  <img src="calc_presintation.gif" alt="Calculator Presentation" width="400">
+  <img src="calc_presentation.gif" alt="Calculator Presentation" width="400">
 </p>
 
 ### Features
